@@ -28,15 +28,17 @@ import {
   Network,
   Globe,
   Sparkles,
+  MessageCircle,
 } from "lucide-react";
 
 // ─── Profile & Links ─────────────────────────────────────────────────────────
 
 const profileLinks = {
   github: "https://github.com/Patil161004",
-  linkedin: "https://linkedin.com/in/atharv-patil",
+  linkedin: "https://www.linkedin.com/in/atharv-patil-539710233",
   email: "mailto:patilav1610@gmail.com",
   resume: "/Atharv_Patil_Resume.pdf",
+  whatsapp: "https://wa.me/917722003772",
 };
 
 // ─── Services / What I Build ─────────────────────────────────────────────────
@@ -635,7 +637,7 @@ function HeroSection() {
     { label: "Projects", href: "#projects" },
     { label: "Freelance", href: "#freelance" },
     { label: "Resume", href: profileLinks.resume },
-    { label: "Contact", href: profileLinks.email },
+    { label: "Contact", href: "#contact" },
   ];
 
   return (
@@ -1631,6 +1633,7 @@ function ContactSection() {
 
         <FadeIn delay={0.35} y={20} className="mt-10 flex flex-wrap items-center justify-center gap-3 sm:mt-14">
           <ContactButton />
+          <ResourceLink href={profileLinks.whatsapp} label="WhatsApp" icon={MessageCircle} />
           <ResourceLink href={profileLinks.github} label="GitHub" icon={Github} />
           <ResourceLink href={profileLinks.linkedin} label="LinkedIn" icon={Linkedin} />
           <ResourceLink href={profileLinks.resume} label="Resume" icon={FileText} />
